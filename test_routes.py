@@ -1,6 +1,8 @@
 import unittest
 import app
 
+# Template Render and Route Tests
+
 
 class TestContainerOnHome(unittest.TestCase):
     def setUp(self):
@@ -21,6 +23,8 @@ class TestContainerOnHome(unittest.TestCase):
     def test_homepage(self):
         rv = self.app.get('/home')
         self.assertIn('Welcome to the Homepage', rv.data)
+
+# DB Tests
 
 
 class DBFunctions(unittest.TestCase):
